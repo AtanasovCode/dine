@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./Global";
 
 //Routes Import
 import Homepage from "./routes/Homepage";
@@ -31,6 +32,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container>
+        <GlobalStyles />
         <RouterProvider router={router} />
       </Container>
     </ThemeProvider>
