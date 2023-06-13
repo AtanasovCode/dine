@@ -32,7 +32,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container>
-        <GlobalStyles />
+        <GlobalStyles /> 
         <RouterProvider router={router} />
       </Container>
     </ThemeProvider>
@@ -42,4 +42,6 @@ function App() {
 export default App;
 
 
-const Container = styled.div``;
+const Container = styled.div`
+  max-width: 1440px;
+`;
