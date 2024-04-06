@@ -1,9 +1,11 @@
-import Hero from "../components/Hero";
+import Hero from "../components/homepage/Hero";
+import Description from "../components/homepage/Description";
 
 const Homepage = () => {
     return (
-        <div>
+        <div className="flex flex-col">
             <Hero />
+            <Description />
         </div>
     );
 }

@@ -1,29 +1,10 @@
-import backgroundMobile from '../assets/homepage/hero-bg-mobile.jpg';
-import backgroundTablet from '../assets/homepage/hero-bg-tablet.jpg';
-import backgroundDesktop from '../assets/homepage/hero-bg-desktop.jpg';
-import logo from '../assets/logo.svg';
+import HeroImage from './HeroImage';
+import logo from '../../assets/logo.svg';
 
 const Hero = () => {
     return (
         <div className="relative">
-            {/*Mobile*/}
-            <img
-                src={backgroundMobile}
-                alt="image of a pizza used as background image to the hero section"
-                className="w-full sm:hidden"
-            />
-            {/*Tablet*/}
-            <img
-                src={backgroundTablet}
-                alt="image of a pizza used as background image to the hero section"
-                className="hidden sm:block lg:hidden w-full"
-            />
-            {/*Desktop*/}
-            <img
-                src={backgroundDesktop}
-                alt="image of a pizza used as background image to the hero section"
-                className="hidden lg:block w-full"
-            />
+            <HeroImage />
 
             <div className="flex flex-col items-center justify-center text-white
             w-[90%] sm:w-[80%] absolute top-[30%] sm:top-[40%] left-[50%] -translate-x-[50%]
