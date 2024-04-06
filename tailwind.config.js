@@ -17,7 +17,10 @@ export default {
       },
       fontFamily: {
         'spartan': "League Spartan",
-      }
+      },
+      screens: {
+        'lg': "1100px",
+      },
     },
   },
   plugins: [],
