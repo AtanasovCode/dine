@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        //primary
+        'beaver': "#9e7f66",
+        'cod-gray': "#111111",
+        //secondary
+        'mirage': "#17192b",
+        'ebony-clay': "#242b37",
+        'shuttle-gray': "#5c6779"
+      },
+      fontFamily: {
+        'spartan': "League Spartan",
+      }
+    },
   },
   plugins: [],
 }

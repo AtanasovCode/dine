@@ -13,7 +13,7 @@ const App = () => {
   ])
 
   return (
-    <div>
+    <div className="w-screen min-h-screen font-spartan">
       <RouterProvider router={router} />
     </div>
   );
