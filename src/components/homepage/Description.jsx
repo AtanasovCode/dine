@@ -1,3 +1,5 @@
+import DescriptionComponent from './DescriptionComponent';
+
 //importing images
 import enjoyablePlaceDesktop from '../../assets/homepage/enjoyable-place-desktop.jpg';
 import enjoyablePlaceDesktopx2 from '../../assets/homepage/enjoyable-place-desktop@2x.jpg';
@@ -6,31 +8,42 @@ import enjoyablePlaceTabletx2 from '../../assets/homepage/enjoyable-place-tablet
 import enjoyablePlaceMobile from '../../assets/homepage/enjoyable-place-mobile.jpg';
 import enjoyablePlaceMobilex2 from '../../assets/homepage/enjoyable-place-mobile@2x.jpg';
 
+import locallySourcedMobile from '../../assets/homepage/locally-sourced-mobile.jpg';
+import locallySourcedMobilex2 from '../../assets/homepage/locally-sourced-mobile@2x.jpg';
+import locallySourcedTablet from '../../assets/homepage/locally-sourced-tablet.jpg';
+import locallySourcedTabletx2 from '../../assets/homepage/locally-sourced-tablet@2x.jpg';
+import locallySourcedDesktop from '../../assets/homepage/locally-sourced-desktop.jpg';
+import locallySourcedDesktopx2 from '../../assets/homepage/locally-sourced-desktop@2x.jpg';
+
+
 const Description = () => {
     return (
         <div className="
-            w-all flex flex-col px-4
+            w-all flex flex-col px-6
         ">
-            <div className="flex flex-col items-center justify-center w-all translate-y-[-20%] lg:translate-y-[-5%]">
-                <picture>
-                    {/*Mobile*/}
-                    <source
-                        media="(max-width: 600px)"
-                        srcSet={`${enjoyablePlaceMobile} 1x, ${enjoyablePlaceMobilex2} 2x`}
-                    />
-                    {/*Tablet*/}
-                    <source
-                        media="(max-width: 1199px)"
-                        srcSet={`${enjoyablePlaceTablet} 1x, ${enjoyablePlaceTabletx2} 2x`}
-                    />
-                    {/*Desktop*/}
-                    <img
-                        srcSet={`${enjoyablePlaceDesktop} x1, ${enjoyablePlaceDesktopx2} 2x`}
-                        alt="image of the restaurant surrounded by trees and nature"
-                        className="sm:w-[75vw] lg:w-auto"
-                    />
-                </picture>
-            </div>
+            <DescriptionComponent 
+                mobile={enjoyablePlaceMobile}
+                mobilex2={enjoyablePlaceMobilex2}
+                tablet={enjoyablePlaceTablet}
+                tabletx2={enjoyablePlaceTabletx2}
+                desktop={enjoyablePlaceDesktop}
+                desktopx2={enjoyablePlaceDesktopx2}
+                titleOne="Enjoyable place"
+                titleTwo="for all the family"
+                desc="Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange a tour of the farm before your meal."
+            />
+
+            <DescriptionComponent 
+                mobile={locallySourcedMobile}
+                mobilex2={locallySourcedMobilex2}
+                tablet={locallySourcedTablet}
+                tabletx2={locallySourcedTabletx2}
+                desktop={locallySourcedDesktop}
+                desktopx2={locallySourcedDesktopx2}
+                titleOne="The most locally"
+                titleTwo="sourced food"
+                desc="All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food."
+            />
         </div>
     );
 }
