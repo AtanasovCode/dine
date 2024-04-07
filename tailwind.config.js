@@ -13,14 +13,15 @@ export default {
         //secondary
         'mirage': "#17192b",
         'ebony-clay': "#242b37",
-        'shuttle-gray': "#5c6779"
+        'shuttle-gray': "#5c6779",
+        'hero-background': "#111111",
       },
       fontFamily: {
         'spartan': "League Spartan",
       },
       screens: {
-        'sm': "500px",
-        'lg': "1100px",
+        'sm': "600px",
+        'lg': "1199px",
       },
     },
   },

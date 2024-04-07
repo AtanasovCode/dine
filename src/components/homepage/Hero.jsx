@@ -3,12 +3,12 @@ import logo from '../../assets/logo.svg';
 
 const Hero = () => {
     return (
-        <div className="relative">
+        <div className="relative min-h-[100vh] bg-hero-background">
             <HeroImage />
 
             <div className="flex flex-col items-center justify-center text-white
             w-[90%] sm:w-[80%] absolute top-[30%] sm:top-[40%] left-[50%] -translate-x-[50%]
-            lg:top-[15%] lg:left-[50%] lg:translate-x-auto lg:items-start">
+            lg:top-[7%] lg:left-[50%] lg:translate-x-auto lg:items-start">
                 <img src={logo} alt="dine logo" className="mb-12 w-24 sm:w-28 lg:mb-36" />
 
                 <div className="text-3xl font-light flex flex-col items-center justify-center mb-8
