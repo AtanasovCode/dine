@@ -22,6 +22,7 @@ const HighlightComponent = ({
                 <img 
                     srcSet={`${desktopTablet} 1x, ${desktopTabletx2} 2x`}
                     alt={alt}
+                    className=""
                 />
             </picture>
             <div className="

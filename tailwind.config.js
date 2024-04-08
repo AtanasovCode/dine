@@ -25,6 +25,9 @@ export default {
         'md': "825px",
         'lg': "1199px",
       },
+      boxShadow: {
+        'picture': '30px 20px 12px 10px rgba(0, 0, 0, .6)', // Adjust values as needed
+      },
     },
   },
   plugins: [],

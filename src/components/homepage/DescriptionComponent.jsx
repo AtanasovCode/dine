@@ -12,9 +12,12 @@ const DescriptionComponent = ({
     desc,
 }) => {
     return (
-        <div className="flex-1 flex flex-col items-center justify-center w-all translate-y-[-10%]  mb-16
-        sm:w-[65%] lg:translate-y-[-8%] sm:mb-32 even:mb-0
-        lg:w-full lg:px-16 lg:flex-row even:lg:flex-row-reverse lg:justify-between">
+        <div className="
+            flex-1 flex flex-col items-center justify-center w-all translate-y-[-10%]  mb-4
+            sm:w-[65%] lg:translate-y-[-8%] sm:mb-32 even:mb-0
+            lg:w-full lg:px-16 lg:flex-row even:lg:flex-row-reverse lg:justify-between lg:mb-0
+            even:lg:translate-y-[7%]
+        ">
             <picture className="inline-block flex-1">
                 {/*Mobile*/}
                 <source
@@ -30,7 +33,7 @@ const DescriptionComponent = ({
                 <img
                     srcSet={`${desktop} 1x, ${desktopx2} 2x`}
                     alt="image of the restaurant surrounded by trees and nature"
-                    className="sm:w-[75vw]"
+                    className="sm:w-[75vw] shadow-picture"
                 />
             </picture>
 
