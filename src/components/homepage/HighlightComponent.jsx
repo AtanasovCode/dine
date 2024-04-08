@@ -9,8 +9,8 @@ const HighlightComponent = ({
 }) => {
     return (
         <div className="
-            flex flex-col items-center justify-center w-full px-2 my-12
-            sm:flex-row sm:items-stretch md:my-16
+            flex flex-col items-center justify-center w-full px-2 mb-12
+            sm:flex-row sm:items-stretch md:mb-0 even:md:my-16
         ">
             <picture className="mb-6 sm:mb-0">
                 {/*Mobile*/}

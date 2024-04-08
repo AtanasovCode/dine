@@ -23,21 +23,32 @@ const Highlights = () => {
         <div className="
             flex flex-col items-center justify-center min-w-full bg-cod-gray text-white
             px-6 py-24 xs:px-12 sm:px-16
-            lg:flex-row
+            lg:flex-row lg:items-stretch lg:py-48 lg:px-24
         ">
-            <div className="flex flex-col items-center justify-center">
-                <div className="flex flex-col items-center justify-center text-2xl font-bold
-                sm:text-5xl">
+            <div className="
+                flex flex-col items-center justify-center
+                lg:h-full lg:justify-start lg:mr-8
+            ">
+                <div className="
+                    flex flex-col items-center justify-center text-2xl font-bold
+                    sm:text-5xl lg:w-full lg:items-start
+                ">
                     <div>A few highlights from</div>
                     <div>our menu</div>
                 </div>
-                <div className="mt-6 text-center sm:text-xl md:max-w-[65%]">
+                <div className="
+                    mt-6 text-center 
+                    sm:text-xl md:max-w-[65%] lg:max-w-full lg:text-left
+                ">
                     We cater for all dietary requirements, but here’s a glimpse at
                     some of our diner’s favourites. Our menu is revamped every season.
                 </div>
             </div>
 
-            <div>
+            <div className="
+                w-full flex flex-col items-center justify-center mt-24 
+                lg:mt-0 lg:justify-start
+            ">
                 <HighlightComponent
                     desktopTablet={salmonDesktopTablet}
                     desktopTabletx2={salmonDesktopTabletx2}
