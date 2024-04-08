@@ -20,6 +20,7 @@ export default {
         'spartan': "League Spartan",
       },
       screens: {
+        'xs': "500px",
         'sm': "601px",
         'lg': "1199px",
       },
