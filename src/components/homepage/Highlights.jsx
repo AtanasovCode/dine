@@ -29,13 +29,13 @@ const Highlights = () => {
                     <div>our menu</div>
                 </div>
                 <div className="mt-6 text-center xs:mx-16 sm:max-w-[70%] sm:text-xl">
-                    We cater for all dietary requirements, but here’s a glimpse at 
+                    We cater for all dietary requirements, but here’s a glimpse at
                     some of our diner’s favourites. Our menu is revamped every season.
                 </div>
             </div>
 
             <div>
-                <HighlightComponent 
+                <HighlightComponent
                     desktopTablet={salmonDesktopTablet}
                     desktopTabletx2={salmonDesktopTabletx2}
                     mobile={salmonMobile}
@@ -43,6 +43,28 @@ const Highlights = () => {
                     title="Seared Salmon Fillet"
                     desc="Our locally sourced salmon served 
                     with a refreshing buckwheat summer salad."
+                    alt="image of a dish called seared salmon fillet"
+                />
+                <HighlightComponent
+                    desktopTablet={beefDesktopTablet}
+                    desktopTabletx2={beefDesktopTabletx2}
+                    mobile={beefMobile}
+                    mobilex2={beefMobilex2}
+                    title="Rosemary Filet Mignon"
+                    desc="Our prime beef served to your taste 
+                    with a delicious choice of seasonal 
+                    sides."
+                    alt="image of a dish called rosemary filet mignon"
+                />
+                <HighlightComponent
+                    desktopTablet={chocolateDesktopTablet}
+                    desktopTabletx2={chocolateDesktopTabletx2}
+                    mobile={chocolateMobile}
+                    mobilex2={chocolateMobilex2}
+                    title="Summer Fruit Chocolate Mousse"
+                    desc="Creamy mousse combined with 
+                    summer fruits and dark chocolate shavings."
+                    alt="image of a fruit chocolate musse"
                 />
             </div>
         </div>
