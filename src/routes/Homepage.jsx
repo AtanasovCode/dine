@@ -3,6 +3,7 @@ import Description from "../components/homepage/sections/Description";
 import Highlights from "../components/homepage/sections/Highlights";
 import Family from "../components/homepage/sections/Family";
 import Reservation from "../components/homepage/sections/Reservation";
+import Footer from "../components/homepage/sections/Footer";
 
 const Homepage = () => {
     return (
@@ -12,6 +13,7 @@ const Homepage = () => {
             <Highlights />
             <Family />
             <Reservation />
+            <Footer />
         </div>
     );
 }
