@@ -21,12 +21,13 @@ export default {
       },
       screens: {
         'xs': "500px",
-        'sm': "601px",
+        'sm': "600px",
         'md': "825px",
         'lg': "1199px",
       },
       boxShadow: {
-        'picture': '30px 20px 12px 10px rgba(0, 0, 0, .6)', // Adjust values as needed
+        'picture': '30px 20px 12px 10px rgba(0, 0, 0, .6)',
+        'picture-sm': '8px 5px 12px 7px rgba(0, 0, 0, .5)',
       },
     },
   },

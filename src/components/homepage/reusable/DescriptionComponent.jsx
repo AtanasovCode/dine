@@ -33,7 +33,7 @@ const DescriptionComponent = ({
                 <img
                     srcSet={`${desktop} 1x, ${desktopx2} 2x`}
                     alt="image of the restaurant surrounded by trees and nature"
-                    className="sm:w-[75vw] shadow-picture"
+                    className="sm:w-[75vw] shadow-picture-sm lg:shadow-picture"
                 />
             </picture>
 
