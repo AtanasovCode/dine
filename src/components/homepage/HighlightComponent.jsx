@@ -10,11 +10,12 @@ const HighlightComponent = ({
     return (
         <div className="
             flex flex-col items-center justify-center w-full px-2 my-12
+            sm:flex-row sm:items-stretch md:my-16
         ">
-            <picture className="mb-6">
+            <picture className="mb-6 sm:mb-0">
                 {/*Mobile*/}
                 <source 
-                    media="(max-width: 600px)"
+                    media="(max-width: 601px)"
                     srcSet={`${mobile} 1x, ${mobilex2} 2x`}
                 />
                 {/*Tablet/Desktop*/}
@@ -23,11 +24,17 @@ const HighlightComponent = ({
                     alt={alt}
                 />
             </picture>
-            <div className="flex flex-col items-center justify-center">
-                <div className="text-xl font-bold mb-6">
+            <div className="
+                flex flex-col items-center justify-center
+                sm:justify-start sm:items-start sm:ml-12
+            ">
+                <div className="text-xl font-bold mb-6 sm:mb-2">
                     {title}
                 </div>
-                <div className="text-center">
+                <div className="
+                    text-center mx-4 
+                    xs:mx-16 sm:text-left sm:mx-0 sm:max-w-[90%]
+                ">
                     {desc}
                 </div>
             </div>
