@@ -1,21 +1,21 @@
-import HighlightComponent from "./HighlightComponent";
+import HighlightComponent from '../reusable/HighlightComponent';
 
 //Importing Images
 //First Image
-import salmonDesktopTablet from '../../assets/homepage/salmon-desktop-tablet.jpg';
-import salmonDesktopTabletx2 from '../../assets/homepage/salmon-desktop-tablet@2x.jpg';
-import salmonMobile from '../../assets/homepage/salmon-mobile.jpg';
-import salmonMobilex2 from '../../assets/homepage/salmon-mobile@2x.jpg';
+import salmonDesktopTablet from '../../../assets/homepage/salmon-desktop-tablet.jpg';
+import salmonDesktopTabletx2 from '../../../assets/homepage/salmon-desktop-tablet@2x.jpg';
+import salmonMobile from '../../../assets/homepage/salmon-mobile.jpg';
+import salmonMobilex2 from '../../../assets/homepage/salmon-mobile@2x.jpg';
 //Second Image
-import beefDesktopTablet from '../../assets/homepage/beef-desktop-tablet.jpg';
-import beefDesktopTabletx2 from '../../assets/homepage/beef-desktop-tablet@2x.jpg';
-import beefMobile from '../../assets/homepage/beef-mobile.jpg';
-import beefMobilex2 from '../../assets/homepage/beef-mobile@2x.jpg';
+import beefDesktopTablet from '../../../assets/homepage/beef-desktop-tablet.jpg';
+import beefDesktopTabletx2 from '../../../assets/homepage/beef-desktop-tablet@2x.jpg';
+import beefMobile from '../../../assets/homepage/beef-mobile.jpg';
+import beefMobilex2 from '../../../assets/homepage/beef-mobile@2x.jpg';
 //Third Image
-import chocolateDesktopTablet from '../../assets/homepage/chocolate-desktop-tablet.jpg';
-import chocolateDesktopTabletx2 from '../../assets/homepage/chocolate-desktop-tablet@2x.jpg';
-import chocolateMobile from '../../assets/homepage/chocolate-mobile.jpg';
-import chocolateMobilex2 from '../../assets/homepage/chocolate-mobile@2x.jpg';
+import chocolateDesktopTablet from '../../../assets/homepage/chocolate-desktop-tablet.jpg';
+import chocolateDesktopTabletx2 from '../../../assets/homepage/chocolate-desktop-tablet@2x.jpg';
+import chocolateMobile from '../../../assets/homepage/chocolate-mobile.jpg';
+import chocolateMobilex2 from '../../../assets/homepage/chocolate-mobile@2x.jpg';
 
 
 const Highlights = () => {

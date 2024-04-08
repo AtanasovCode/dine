@@ -1,9 +1,9 @@
-import backgroundMobile from '../../assets/homepage/hero-bg-mobile.jpg';
-import backgroundMobile2x from '../../assets/homepage/hero-bg-mobile@2x.jpg';
-import backgroundTablet from '../../assets/homepage/hero-bg-tablet.jpg';
-import backgroundTablet2x from '../../assets/homepage/hero-bg-tablet@2x.jpg';
-import backgroundDesktop from '../../assets/homepage/hero-bg-desktop.jpg';
-import backgroundDesktop2x from '../../assets/homepage/hero-bg-desktop@2x.jpg';
+import backgroundMobile from '../../../assets/homepage/hero-bg-mobile.jpg';
+import backgroundMobile2x from '../../../assets/homepage/hero-bg-mobile@2x.jpg';
+import backgroundTablet from '../../../assets/homepage/hero-bg-tablet.jpg';
+import backgroundTablet2x from '../../../assets/homepage/hero-bg-tablet@2x.jpg';
+import backgroundDesktop from '../../../assets/homepage/hero-bg-desktop.jpg';
+import backgroundDesktop2x from '../../../assets/homepage/hero-bg-desktop@2x.jpg';
 
 const HeroImage = () => {
     return (

@@ -1,5 +1,5 @@
-import HeroImage from './HeroImage';
-import logo from '../../assets/logo.svg';
+import HeroImage from '../reusable/HeroImage';
+import logo from '../../../assets/logo.svg';
 
 const Hero = () => {
     return (

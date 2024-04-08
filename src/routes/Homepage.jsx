@@ -1,6 +1,6 @@
-import Hero from "../components/homepage/Hero";
-import Description from "../components/homepage/Description";
-import Highlights from "../components/homepage/Highlights";
+import Hero from "../components/homepage/sections/Hero";
+import Description from "../components/homepage/sections/Description";
+import Highlights from "../components/homepage/sections/Highlights";
 
 const Homepage = () => {
     return (

@@ -1,19 +1,19 @@
-import DescriptionComponent from './DescriptionComponent';
+import DescriptionComponent from '../reusable/DescriptionComponent';
 
 //importing images
-import enjoyablePlaceDesktop from '../../assets/homepage/enjoyable-place-desktop.jpg';
-import enjoyablePlaceDesktopx2 from '../../assets/homepage/enjoyable-place-desktop@2x.jpg';
-import enjoyablePlaceTablet from '../../assets/homepage/enjoyable-place-tablet.jpg';
-import enjoyablePlaceTabletx2 from '../../assets/homepage/enjoyable-place-tablet@2x.jpg';
-import enjoyablePlaceMobile from '../../assets/homepage/enjoyable-place-mobile.jpg';
-import enjoyablePlaceMobilex2 from '../../assets/homepage/enjoyable-place-mobile@2x.jpg';
+import enjoyablePlaceDesktop from '../../../assets/homepage/enjoyable-place-desktop.jpg';
+import enjoyablePlaceDesktopx2 from '../../../assets/homepage/enjoyable-place-desktop@2x.jpg';
+import enjoyablePlaceTablet from '../../../assets/homepage/enjoyable-place-tablet.jpg';
+import enjoyablePlaceTabletx2 from '../../../assets/homepage/enjoyable-place-tablet@2x.jpg';
+import enjoyablePlaceMobile from '../../../assets/homepage/enjoyable-place-mobile.jpg';
+import enjoyablePlaceMobilex2 from '../../../assets/homepage/enjoyable-place-mobile@2x.jpg';
 
-import locallySourcedMobile from '../../assets/homepage/locally-sourced-mobile.jpg';
-import locallySourcedMobilex2 from '../../assets/homepage/locally-sourced-mobile@2x.jpg';
-import locallySourcedTablet from '../../assets/homepage/locally-sourced-tablet.jpg';
-import locallySourcedTabletx2 from '../../assets/homepage/locally-sourced-tablet@2x.jpg';
-import locallySourcedDesktop from '../../assets/homepage/locally-sourced-desktop.jpg';
-import locallySourcedDesktopx2 from '../../assets/homepage/locally-sourced-desktop@2x.jpg';
+import locallySourcedMobile from '../../../assets/homepage/locally-sourced-mobile.jpg';
+import locallySourcedMobilex2 from '../../../assets/homepage/locally-sourced-mobile@2x.jpg';
+import locallySourcedTablet from '../../../assets/homepage/locally-sourced-tablet.jpg';
+import locallySourcedTabletx2 from '../../../assets/homepage/locally-sourced-tablet@2x.jpg';
+import locallySourcedDesktop from '../../../assets/homepage/locally-sourced-desktop.jpg';
+import locallySourcedDesktopx2 from '../../../assets/homepage/locally-sourced-desktop@2x.jpg';
 
 
 const Description = () => {
