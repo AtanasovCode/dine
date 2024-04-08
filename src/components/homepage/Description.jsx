@@ -19,7 +19,7 @@ import locallySourcedDesktopx2 from '../../assets/homepage/locally-sourced-deskt
 const Description = () => {
     return (
         <div className="
-            w-all flex flex-col px-6
+            w-all flex flex-col items-center justify-center
         ">
             <DescriptionComponent 
                 mobile={enjoyablePlaceMobile}
