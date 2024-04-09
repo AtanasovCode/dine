@@ -1,11 +1,71 @@
-import desktop from '../../../assets/homepage/family-gathering-desktop.jpg';
-import desktopx2 from '../../../assets/homepage/family-gathering-desktop@2x.jpg';
-import tablet from '../../../assets/homepage/family-gathering-tablet.jpg';
-import tabletx2 from '../../../assets/homepage/family-gathering-tablet@2x.jpg';
-import mobile from '../../../assets/homepage/family-gathering-mobile.jpg';
-import mobilex2 from '../../../assets/homepage/family-gathering-mobile@2x.jpg';
+import { useState } from 'react';
+
+import familyDesktop from '../../../assets/homepage/family-gathering-desktop.jpg';
+import familyDesktopx2 from '../../../assets/homepage/family-gathering-desktop@2x.jpg';
+import familyTablet from '../../../assets/homepage/family-gathering-tablet.jpg';
+import familyTabletx2 from '../../../assets/homepage/family-gathering-tablet@2x.jpg';
+import familyMobile from '../../../assets/homepage/family-gathering-mobile.jpg';
+import familyMobilex2 from '../../../assets/homepage/family-gathering-mobile@2x.jpg';
+
+import specialDesktop from '../../../assets/homepage/special-events-desktop.jpg';
+import specialDesktopx2 from '../../../assets/homepage/special-events-desktop@2x.jpg';
+import specialTablet from '../../../assets/homepage/special-events-tablet.jpg';
+import specialTabletx2 from '../../../assets/homepage/special-events-tablet@2x.jpg';
+import specialMobile from '../../../assets/homepage/special-events-mobile.jpg';
+import specialMobilex2 from '../../../assets/homepage/special-events-mobile@2x.jpg';
+
+import socialDesktop from '../../../assets/homepage/social-events-desktop.jpg';
+import socialDesktopx2 from '../../../assets/homepage/social-events-desktop@2x.jpg';
+import socialTablet from '../../../assets/homepage/social-events-tablet.jpg';
+import socialTabletx2 from '../../../assets/homepage/social-events-tablet@2x.jpg';
+import socialMobile from '../../../assets/homepage/social-events-mobile.jpg';
+import socialMobilex2 from '../../../assets/homepage/social-events-mobile@2x.jpg';
 
 const Events = () => {
+
+
+    const [selectedEvent, setSelectedEvent] = useState("family");
+    const [events, setEvents] = useState({
+        family: {
+            name: "Family Gathering",
+            description: "We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.",
+            image: {
+                desktop: familyDesktop,
+                desktopx2: familyDesktopx2,
+                tablet: familyTablet,
+                tabletx2: familyTabletx2,
+                mobile: familyMobile,
+                mobilex2: familyMobilex2
+            }
+        },
+        special: {
+            name: "Special Events",
+            description: "Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal.",
+            image: {
+                desktop: specialDesktop,
+                desktopx2: specialDesktopx2,
+                tablet: specialTablet,
+                tabletx2: specialTabletx2,
+                mobile: specialMobile,
+                mobilex2: specialMobilex2
+            }
+        },
+        social: {
+            name: "Social Events",
+            description: "Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.",
+            image: {
+                desktop: socialDesktop,
+                desktopx2: socialDesktopx2,
+                tablet: socialTablet,
+                tabletx2: socialTabletx2,
+                mobile: socialMobile,
+                mobilex2: socialMobilex2
+            }
+        },
+    });
+
+    const event = events[selectedEvent];
+
     return (
         <div className="
             flex flex-col items-center justify-center py-16 w-full
@@ -15,17 +75,17 @@ const Events = () => {
                 {/* Mobile */}
                 <source
                     media="(max-width: 600px)"
-                    srcSet={`${mobile} 1x, ${mobilex2} 2x`}
+                    srcSet={`${event.image.mobile} 1x, ${event.image.mobilex2} 2x`}
                 />
                 {/* Tablet */}
                 <source
                     media="(max-width: 1200px)"
-                    srcSet={`${tablet} 1x, ${tabletx2} 2x`}
+                    srcSet={`${event.image.tablet} 1x, ${event.image.tabletx2} 2x`}
                 />
                 {/* Desktop */}
                 <img
-                    srcSet={`${desktop} 1x, ${desktopx2} 2x`}
-                    alt="picture of a table with a family sitting and dining"
+                    srcSet={`${event.image.desktop} 1x, ${event.image.desktopx2} 2x`}
+                    alt={`picture of ${event.name}`}
                     className="shadow-picture-sm lg:shadow-picture"
                 />
             </picture>
@@ -36,9 +96,23 @@ const Events = () => {
             ">
                 <div className="flex flex-col mt-12">
                     <div className="flex flex-col items-center justify-center uppercase font-semibold text-lg">
-                        <div>Family Gathering</div>
-                        <div className="my-4 opacity-50">Special Events</div>
-                        <div className="opacity-50">Social Events</div>
+                        <div
+                            onClick={() => setSelectedEvent("family")}
+                            className={`cursor-pointer ${selectedEvent === "family" ? "font-bold opacity-100" : "font-normal opacity-70"}`}
+                        >
+                            Family Gathering
+                        </div>
+                        <div
+                            className={`cursor-pointer ${selectedEvent === "special" ? "font-bold opacity-100" : "font-normal opacity-70"}`}
+                            onClick={() => setSelectedEvent("special")}>
+                            Special Events
+                        </div>
+                        <div 
+                            onClick={() => setSelectedEvent("social")}
+                            className={`cursor-pointer ${selectedEvent === "social" ? "font-bold opacity-100" : "font-normal opacity-70"}`}
+                        >
+                            Social Events
+                        </div>
                     </div>
                 </div>
 
@@ -47,15 +121,13 @@ const Events = () => {
                     lg:mt-0 lg:px-0 lg:items-start
                 ">
                     <div className="text-3xl font-bold mb-8 md:text-5xl">
-                        Family Gathering
+                        {event.name}
                     </div>
                     <div className="
                         text-center sm:text-xl sm:mx-12 md:max-w-[60%]
                         lg:mx-0
                     ">
-                        We love catering for entire families. So please bring
-                        everyone along for a special meal with your loved ones.
-                        We’ll provide a memorable experience for all.
+                        {event.description}
                     </div>
                     <div>
                         <input
