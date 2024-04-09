@@ -1,7 +1,7 @@
 import Hero from "../components/homepage/sections/Hero";
 import Description from "../components/homepage/sections/Description";
 import Highlights from "../components/homepage/sections/Highlights";
-import Family from "../components/homepage/sections/Family";
+import Events from "../components/homepage/sections/Events";
 import Reservation from "../components/homepage/sections/Reservation";
 import Footer from "../components/homepage/sections/Footer";
 
@@ -11,7 +11,7 @@ const Homepage = () => {
             <Hero />
             <Description />
             <Highlights />
-            <Family />
+            <Events />
             <Reservation />
             <Footer />
         </div>

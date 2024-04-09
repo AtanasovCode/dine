@@ -5,7 +5,7 @@ import tabletx2 from '../../../assets/homepage/family-gathering-tablet@2x.jpg';
 import mobile from '../../../assets/homepage/family-gathering-mobile.jpg';
 import mobilex2 from '../../../assets/homepage/family-gathering-mobile@2x.jpg';
 
-const Family = () => {
+const Events = () => {
     return (
         <div className="
             flex flex-col items-center justify-center py-16 w-full
@@ -74,4 +74,4 @@ const Family = () => {
     );
 }
 
-export default Family;
+export default Events;
