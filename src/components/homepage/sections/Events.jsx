@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { Link } from 'react-router-dom';
+
 import familyDesktop from '../../../assets/homepage/family-gathering-desktop.jpg';
 import familyDesktopx2 from '../../../assets/homepage/family-gathering-desktop@2x.jpg';
 import familyTablet from '../../../assets/homepage/family-gathering-tablet.jpg';
@@ -94,25 +96,25 @@ const Events = () => {
                 flex-1 flex flex-col items-center justify-center
                 lg:flex-col-reverse lg:items-start lg:ml-16
             ">
-                <div className="flex flex-col mt-12">
-                    <div className="flex flex-col items-center justify-center uppercase font-semibold text-lg">
-                        <div
-                            onClick={() => setSelectedEvent("family")}
-                            className={`cursor-pointer ${selectedEvent === "family" ? "font-bold opacity-100" : "font-normal opacity-70"}`}
-                        >
-                            Family Gathering
-                        </div>
-                        <div
-                            className={`cursor-pointer ${selectedEvent === "special" ? "font-bold opacity-100" : "font-normal opacity-70"}`}
-                            onClick={() => setSelectedEvent("special")}>
-                            Special Events
-                        </div>
-                        <div 
-                            onClick={() => setSelectedEvent("social")}
-                            className={`cursor-pointer ${selectedEvent === "social" ? "font-bold opacity-100" : "font-normal opacity-70"}`}
-                        >
-                            Social Events
-                        </div>
+                <div className="
+                    flex flex-col items-start justify-center uppercase font-semibold text-lg mt-12
+                ">
+                    <div
+                        onClick={() => setSelectedEvent("family")}
+                        className={`cursor-pointer hover:font-semibold ${selectedEvent === "family" ? "font-bold opacity-100" : "font-normal opacity-70"}`}
+                    >
+                        Family Gathering
+                    </div>
+                    <div
+                        className={`cursor-pointer my-4 hover:font-semibold ${selectedEvent === "special" ? "font-bold opacity-100" : "font-normal opacity-70"}`}
+                        onClick={() => setSelectedEvent("special")}>
+                        Special Events
+                    </div>
+                    <div
+                        onClick={() => setSelectedEvent("social")}
+                        className={`cursor-pointer hover:font-semibold ${selectedEvent === "social" ? "font-bold opacity-100" : "font-normal opacity-70"}`}
+                    >
+                        Social Events
                     </div>
                 </div>
 
@@ -125,20 +127,21 @@ const Events = () => {
                     </div>
                     <div className="
                         text-center sm:text-xl sm:mx-12 md:max-w-[60%]
-                        lg:mx-0
+                        lg:mx-0 lg:text-left
                     ">
                         {event.description}
                     </div>
-                    <div>
-                        <input
-                            type="button"
-                            value="book a table"
+                    <div className="mt-12">
+                        <Link
+                            to="/booking"
                             className="
                                 py-5 px-16 uppercase bg-cod-gray text-white cursor-pointer 
                                 mt-8 font-semibold tracking-widest
                                 hover:bg-transparent hover:border-2 hover:border-solid hover:border-black hover:text-black
                             "
-                        />
+                        >
+                            Book a table
+                        </Link>
                     </div>
                 </div>
             </div>

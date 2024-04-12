@@ -1,6 +1,10 @@
+import HeroBooking from "../components/booking/HeroBooking";
+
 const Booking = () => {
     return (
-        <div></div>
+        <div>
+            <HeroBooking />
+        </div>
     );
 }
 

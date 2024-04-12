@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import HeroImage from '../reusable/HeroImage';
 import logo from '../../../assets/logo.svg';
 
@@ -23,12 +24,13 @@ const Hero = () => {
                 </div>
 
                 <div className="w-full flex items-center justify-center lg:justify-start">
-                    <input
-                        type="button"
-                        value="Book a table"
+                    <Link
+                        to="/booking"
                         className="uppercase font-semibold border border-solid border-white py-4 px-16 w-full
                         sm:w-auto hover:bg-white hover:text-black cursor-pointer transition-colors duration-500"
-                    />
+                    >
+                        Book a table
+                    </Link>
                 </div>
             </div>
         </div>
