@@ -1,3 +1,5 @@
+
+//importing hero image
 import desktop from '../../assets/booking/hero-bg-desktop.jpg';
 import desktopx2 from '../../assets/booking/hero-bg-desktop@2x.jpg';
 import tablet from '../../assets/booking/hero-bg-tablet.jpg';
@@ -9,11 +11,11 @@ import logo from '../../assets/logo.svg';
 
 const HeroBooking = () => {
     return (
-        <div className="w-full min-h-[100vh] flex items-start justify-center relative text-white">
+        <div className="w-full max-h-[90vh] overflow-hidden flex items-start justify-center relative text-white">
             <picture className="w-full">
                 {/*Mobile*/}
                 <source
-                    media="(max-width: 600px)"
+                    media="(max-width: 700px)"
                     srcSet={`${mobile} 1x, ${mobilex2} 2x`}
                 />
                 {/*Tablet*/}
@@ -35,10 +37,10 @@ const HeroBooking = () => {
                         alt="dine logo"
                     />
                 </div>
-                <div className="text-4xl font-light mb-8">
+                <div className="text-4xl font-light mb-8 sm:text-5xl">
                     Reservations
                 </div>
-                <div className="mb-8 text-center">
+                <div className="mb-8 text-center mx-4 sm:max-w-[70%] sm:text-xl">
                     We can’t wait to host you. If you have any special
                     requirements please feel free to call on the phone number 
                     below. We’ll be happy to accommodate you.
