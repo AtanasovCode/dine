@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 //importing hero image
 import desktop from '../../assets/booking/hero-bg-desktop.jpg';
@@ -11,7 +12,10 @@ import logo from '../../assets/logo.svg';
 
 const HeroBooking = () => {
     return (
-        <div className="w-full max-h-[90vh] overflow-hidden flex items-start justify-center relative text-white">
+        <div className="
+            w-full max-h-[90vh] overflow-hidden flex items-start justify-center relative text-white
+            lg:max-h-auto
+        ">
             <picture className="w-full">
                 {/*Mobile*/}
                 <source
@@ -30,27 +34,44 @@ const HeroBooking = () => {
                 />
             </picture>
 
-            <div className="flex flex-col items-center justify-center absolute top-16">
-                <div className="mb-16">
+            <div className="
+                flex flex-col items-center justify-center absolute top-16 
+                lg:h-full lg:items-start lg:justify-between
+            ">
+                <Link to="/" className="
+                    mb-16 w-full flex items-center justify-center cursor-pointer
+                    sm:justify-start sm:ml-24 lg:ml-0 lg:mb-0 
+                ">
                     <img
                         src={logo}
                         alt="dine logo"
                     />
-                </div>
-                <div className="text-4xl font-light mb-8 sm:text-5xl">
-                    Reservations
-                </div>
-                <div className="mb-8 text-center mx-4 sm:max-w-[70%] sm:text-xl">
-                    We can’t wait to host you. If you have any special
-                    requirements please feel free to call on the phone number 
-                    below. We’ll be happy to accommodate you.
-                </div>
-                <div>
-                    <input 
-                        type="button"
-                        value="reserve place"
-                        className="uppercase font-semibold bg-transparent border-2 border-solid border-white px-20 py-6"
-                    />
+                </Link>
+                <div className="
+                    w-full h-full flex flex-col items-center justify-center
+                    lg:items-start
+                ">
+                    <div className="text-4xl font-light mb-8 sm:text-5xl">
+                        Reservations
+                    </div>
+                    <div className="
+                    mb-8 text-center mx-[10vw] 
+                    sm:max-w-[70%] sm:mx-0 sm:text-xl md:max-w-[50%] lg:text-left lg:max-w-[40%]
+                ">
+                        We can’t wait to host you. If you have any special
+                        requirements please feel free to call on the phone number
+                        below. We’ll be happy to accommodate you.
+                    </div>
+                    <div>
+                        <input
+                            type="button"
+                            value="reserve place"
+                            className="
+                            uppercase font-semibold bg-transparent border-2 border-solid border-white px-20 py-6 cursor-pointer
+                            hover:border-none hover:bg-white hover:text-cod-gray transition-all duration-500
+                        "
+                        />
+                    </div>
                 </div>
             </div>
         </div>
