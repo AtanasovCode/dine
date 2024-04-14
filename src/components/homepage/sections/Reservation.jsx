@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import desktop from '../../../assets/homepage/ready-bg-desktop.jpg';
 import desktopx2 from '../../../assets/homepage/ready-bg-desktop@2x.jpg';
 import tablet from '../../../assets/homepage/ready-bg-tablet.jpg';
@@ -36,11 +38,16 @@ const Reservation = () => {
                     Ready to make a reservation?
                 </div>
                 <div className="flex items-center justify-center">
-                    <input 
-                        type="button"
-                        value="Book a table"
-                        className="px-12 py-5 bg-transparent border border-solid border-white text-white uppercase tracking-widest"
-                    />
+                    <Link
+                        to="/booking"
+                        className="
+                            px-12 py-5 bg-transparent border border-solid border-white 
+                            text-white uppercase tracking-widest cursor-pointer
+                            hover:border-none hover:bg-white hover:text-black transition-all duration-500
+                        "
+                    >
+                        Book a table
+                    </Link>
                 </div>
             </div>
         </div>
