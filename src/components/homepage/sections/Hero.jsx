@@ -26,7 +26,7 @@ const Hero = () => {
                 <div className="w-full flex items-center justify-center lg:justify-start">
                     <Link
                         to="/booking"
-                        className="uppercase font-semibold border border-solid border-white py-4 px-16 w-full
+                        className="uppercase font-semibold border border-solid border-white py-4 px-16 w-full text-center
                         sm:w-auto hover:bg-white hover:text-black cursor-pointer transition-colors duration-500"
                     >
                         Book a table

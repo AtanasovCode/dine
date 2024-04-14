@@ -7,7 +7,7 @@ import backgroundDesktop2x from '../../../assets/homepage/hero-bg-desktop@2x.jpg
 
 const HeroImage = () => {
     return (
-        <picture className="w-full flex items-center justify-end">
+        <picture className="w-full flex items-center justify-center lg:justify-end">
             {/*Tablet*/}
             <source
                 media='(max-width: 600px)'

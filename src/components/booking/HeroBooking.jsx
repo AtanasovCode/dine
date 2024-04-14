@@ -35,7 +35,7 @@ const HeroBooking = () => {
             </picture>
 
             <div className="
-                flex flex-col items-center justify-center absolute top-16 
+                flex flex-col items-center justify-center absolute top-16 lg:ml-12
                 lg:h-full lg:items-start lg:justify-between
             ">
                 <Link to="/" className="
